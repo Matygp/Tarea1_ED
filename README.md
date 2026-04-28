@@ -42,7 +42,14 @@ Para el control del historial, se implementaron Nodos dinámicos que alimentan l
 
 ## Compilación y Ejecución
 
-Para compilar el proyecto en un entorno basado en Unix/Linux, utiliza el compilador `g++`:
+1. Clonamos el repositorio en nuestro dispositivo con el comando de git bash: 
+git clone https://github.com/Matygp/Tarea1_ED
+
+2. Entrar a la carpeta Tarea1_ED
+
+3. Para compilar el proyecto en un entorno basado en Unix/Linux, utiliza el compilador `g++`:
 
 ```bash
-g++ -g -o img test.cpp
+g++ -test.cpp -o test
+./test.exe
+

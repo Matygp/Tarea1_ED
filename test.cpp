@@ -10,29 +10,29 @@
 
 int main() {
   moving_image im;
-
-  im.draw("imagen.png");
-  //im.move_left(500);
-  //sleep(2);
-  //im.draw("imagen_desplazada_500.png");
-  //im.move_left(100);
-  //sleep(2);
-  //im.draw("imagen_desplazada_600.png");
+  
+  im.move_left(500);
+  im.move_left(100);
   im.move_right(200);
-  sleep(2);
-  im.draw("imagen_desp_200r.png");
-  //im.move_right(100);
-  //sleep(2);
-  //im.draw("imagen_desp_300r");
+  im.move_right(100);
   im.move_up(200);
-  sleep(2);
-  im.draw("imagen_desp_200up");
   im.move_down(50);
-  sleep(2);
-  im.draw("imagen_desp_50d");
   im.rotate();
-  sleep(2);
-  im.draw("imagen_rotate");
+  im.repeat_all();
+
+  im.rotate();
+  im.rotate(); 
+  im.rotate();
+  im.undo();
+  im.move_right(500);
+  im.draw("salida.png");
+
+  im.rotate();
+  im.rotate(); 
+  im.rotate();
+  im.undo();
+  im.move_right(500);
+  im.repeat_all();
 
   /* NOTA 1: Si usan el mismo nombre para las imágenes, entonces cada llamada al
   método draw() sobreescribirá a la imagen */
